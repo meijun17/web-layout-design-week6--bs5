@@ -1,0 +1,17 @@
+.btn-outline-white{
+    // bootstrap mixin
+    //$color,$color-hover,$active-background,$active-border,$active-color
+    @include button-outline-variant(white,$primary,#1C1C1C,$primary,$primary);
+}
+
+.btn-px5-py3{
+    // bootstrap mixin
+    // ($padding-y, $padding-x, $font-size, $border-radius)
+    @include button-size(1rem,2rem,1rem,0.5rem);
+}
+
+.btn-px7-py2{
+    // bootstrap mixin
+    // ($padding-y, $padding-x, $font-size, $border-radius)
+    @include button-size(0.5rem,3rem,1rem,0.5rem);
+}
