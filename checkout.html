@@ -7,12 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coding Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet"
+  />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -62,20 +65,20 @@
 <section class="pt-4 pb-3 timeline-content">
     <div class="container">
         <div class="row justify-content-center">
-          <div class="col-9 col-md-7 timeline"></div>
+          <div class="col-9 col-lg-7 timeline"></div>
         </div>
         <div class="row">
-          <div class="col-3 col-md-5">
+          <div class="col-3 col-lg-5">
             <div class="timeline-pointer text-center step-1 active">
               <p>課程報名</p>
             </div>
           </div>
-          <div class="col-6 col-md-2">
+          <div class="col-6 col-lg-2">
             <div class="timeline-pointer text-center step-2">
               <p>信用卡付款</p>
             </div>
           </div>
-          <div class="col-3 col-md-5">
+          <div class="col-3 col-lg-5">
             <div class="timeline-pointer text-center step-3">
               <p>付款成功</p>
             </div> 
@@ -85,8 +88,8 @@
 </section>
 <section>
     <div class="container">
-        <div class="row justify-content-center align-items-center mx-7 pt-2 pt-md-0">
-            <div class="col-md-4">
+        <div class="row justify-content-center align-items-center pt-2 pt-lg-0">
+            <div class="col-lg-4 me-n5">
                 <div class="p-4 bg-dark position-relative z-index-1 course-card triangle-right">
                     <img src="./assets/images/teacher01.jpg" alt="teacher"
                          class="rounded-circle box-100 border border-primary border-3 d-block m-auto">
@@ -97,53 +100,53 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="bg-dark course-signUp">
+            <div class="col-lg-8 ms-n5 my-6 py-1">
+                <div class="bg-darkBlack course-signUp">
                     <h3 class="fs-4 fw-bold text-center mb-4">課程報名</h3>
                     <p class="fs-7 fw-bold text-center text-lg-start">選擇付款方式</p>
-                    <ul class="list-unstyled mb-0 row row-cols-2 row-cols-xxl-4 g-2 mb-5">
+                    <ul class="list-unstyled mb-0 row row-cols-2 row-cols-xxl-4 g-2 g-xxl-3 mb-5">
                         <li class="col">
-                            <button type="button" class="btn btn-outline-white p-2 w-100 br8">
+                            <button type="button" class="btn btn-outline-white p-2 w-100 br8 py-xxl-3 active">
                                 信用卡付款
                             </button>
                         </li>
                         <li class="col">
-                            <button type="button" class="btn btn-outline-white p-2 w-100 br8">
+                            <button type="button" class="btn btn-outline-white p-2 w-100 br8 py-xxl-3">
                                 超商繳款
                             </button>
                         </li>
                         <li class="col">
-                            <button type="button" class="btn btn-outline-white p-2 w-100 br8">
+                            <button type="button" class="btn btn-outline-white p-2 w-100 br8 py-xxl-3">
                                 ATM轉帳
                             </button>
                         </li>
                         <li class="col">
-                            <button type="button" class="btn btn-outline-white p-2 w-100 br8">
+                            <button type="button" class="btn btn-outline-white p-2 w-100 br8 py-xxl-3">
                                 12期分期付款
                             </button>
                         </li>
                     </ul>
                     <p class="fs-7 fw-bold text-center text-lg-start">訂單資訊</p>
                     <form>
-                        <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="row row-cols-1 row-cols-lg-2 gy-lg-4 mb-lg-4">
                             <div class="col mb-3 mb-lg-0">
-                                <label for="name" class="form-label mb-2">姓名</label>
+                                <label for="name" class="form-label mb-2 text-light">姓名</label>
                                 <input type="text" class="form-control" placeholder="請輸入姓名" id="name" aria-label="First name">
                             </div>
                             <div class="col mb-3 mb-lg-0">
-                                <label for="tel" class="form-label mb-2">電話</label>
+                                <label for="tel" class="form-label mb-2 text-light">電話</label>
                                 <input type="tel" class="form-control" placeholder="請輸入電話號碼" id="tel" aria-label="tel">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mb-lg-4">
                             <div class="col mb-3 mb-lg-0">
-                                <label for="mail" class="form-label mb-2">Email</label>
+                                <label for="mail" class="form-label mb-2 text-light">Email</label>
                                 <input type="email" class="form-control" placeholder="請輸入Email" id="mail" aria-label="email">
                             </div>
                         </div>
-                        <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="row row-cols-1 row-cols-lg-2 gy-lg-4 mb-lg-4">
                             <div class="col mb-3 mb-lg-0">
-                                <label for="course" class="form-label mb-2">課程</label>
+                                <label for="course" class="form-label mb-2 text-light">課程</label>
                                 <select class="form-select form-select" aria-label="form-select" id="course">
                                     <option value="1">1堂50分鐘</option>
                                     <option value="2">3堂50分鐘</option>
@@ -152,20 +155,19 @@
                                 </select>
                             </div>
                             <div class="col mb-3 mb-lg-0">
-                                <label for="reserveDate" class="form-label mb-2">想預約的日期</label>
-                                <input type="text" class="reserve-date form-control bg-dark2"
-                                    placeholder="請選擇日期" id="reserveDate" aria-label="date">
-        
+                                <label for="reserveDate" class="form-label mb-2 text-light datePicker-style">想預約的日期</label>
+                                <input type="text" class="form-control bg-dark2" name="datepicker"
+                                    placeholder="請選擇日期" id="reserveDate">
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col">
-                                <label for="place" class="form-label mb-2">上課地點</label>
+                                <label for="place" class="form-label mb-2 text-light">上課地點</label>
                                 <input type="text" class="form-control" placeholder="請輸入上課地點" id="place" aria-label="place">
                             </div>
                         </div>
                         <div class="d-lg-flex justify-content-between align-items-center">
-                            <span class="d-block mb-4 mb-lg-0 font-monospace fw-bold fs-5">NT$1600</span>
+                            <span class="d-block mb-4 mb-lg-0 font-monospace fs-5">NT$1600</span>
                             <a type="submit" href="pay.html" class="d-block fs-7 btn btn-gradient px-3 py-2 px-lg-7 border-0 br8">前往結賬</a>
                         </div>
                     </form>
@@ -225,7 +227,7 @@
     </div>
   </div>
 </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

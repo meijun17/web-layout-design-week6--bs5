@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -13131,8 +13132,29 @@ fieldset:disabled .btn {
   }
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 設置flex */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* 方向為垂直方向 */
   font-family: "Noto Sans TC", "sans-serif";
+}
+
+.container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  /* 內容佔滿所有剩餘空間 */
 }
 
 img {
@@ -13902,7 +13924,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .timeline-content {
     background-color: #1C1C1C;
   }
@@ -13910,6 +13932,18 @@ img {
 
 .timeline {
   position: relative;
+}
+
+.timeline.step-2-active::after {
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #62DB54), color-stop(50%, #C1C1C1));
+  background-image: -o-linear-gradient(left, #62DB54 50%, #C1C1C1 50%);
+  background-image: linear-gradient(to right, #62DB54 50%, #C1C1C1 50%);
+}
+
+.timeline.step-3-active::after {
+  background-image: none;
+  background-color: #62DB54;
 }
 
 .timeline::after {
@@ -13987,7 +14021,7 @@ img {
   border-style: solid;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .course-card::after {
     border-color: transparent transparent transparent #2D2D2D;
     left: 100%;
@@ -13996,7 +14030,7 @@ img {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .course-card::after {
     border-color: #2D2D2D transparent transparent transparent;
     left: 50%;
@@ -14007,6 +14041,31 @@ img {
 
 .course-signUp {
   padding: 24px;
+}
+
+@media (min-width: 992px) {
+  .course-signUp {
+    padding: 48px 32px 48px 114px;
+  }
+}
+
+@media (min-width: 992px) {
+  .me-n5 {
+    margin-right: -48px;
+  }
+  .ms-n5 {
+    margin-left: -48px;
+  }
+}
+
+.datepicker-picker {
+  border-color: #FFFFFF;
+  color: #1C1C1C;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #C1C1C1;
+  color: #1C1C1C;
 }
 
 /*# sourceMappingURL=all.css.map */
