@@ -1,10 +1,64 @@
----
-title: Coding Home
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    >
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md py-4 sticky-top navbar-dark bg-dark">
+      <div class="container">
+        <h1 class="logo mb-0">
+          <a href="#" class="logo-link">
+            Coding Home
+          </a>
+        </h1>
+        <button class="navbar-toggler link-primary border-0" 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarList" 
+                aria-controls="navbarList" 
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="material-icons text-primary align-bottom">
+            drag_handle
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarList">
+          <ul class="navbar-nav ms-md-auto align-items-center">
+            <li class="nav-item mb-4 mt-6 my-md-0">
+              <a href="index.html" class="nav-link fs-7 p-0 me-md-6">首頁</a>
+            </li>
+            <li class="nav-item mb-4 mb-md-0">
+              <a href="class.html" class="nav-link fs-7 p-0 me-md-6">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link fs-7 d-flex align-items-center p-0"
+                 data-bs-toggle="modal" data-bs-target="#logInModal">
+                <span class="material-icons">
+                  account_circle
+                </span>
+                 登入
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
 <!-- banner -->
 <section class="banner bg-darkBlack">
   <div class="container banner__img">
@@ -446,3 +500,62 @@ current: index
     </div>
   </div>
 </section>
+
+
+    <footer class="footer">
+      Coding Home © 2022 All Rights Reserved
+    </footer>
+
+
+    <!-- logIn Modal -->
+<div class="modal fade" id="logInModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="logInLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header m-auto justify-content-center mb-md-5 mb-4">
+        <h4 class="modal-title fw-bold" id="logInLabel">登入</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body m-auto">
+        <form>
+          <div class="mb-md-4 mb-3">
+            <label for="Email" class="form-label">信箱</label>
+            <input type="email" class="form-control" id="Email" placeholder="請輸入信箱">
+          </div>
+          <div class="mb-md-4 mb-3">
+            <label for="Password" class="form-label">密碼</label>
+            <input type="password" class="form-control" id="Password" placeholder="請輸入密碼">
+          </div>
+          <div class="mb-md-7 mb-4">
+            <a href="checkout.html" class="btn btn-gradient fs-7 py-2 br8 w-100">
+                登入
+            </a>
+          </div>
+        </form>
+        <div class="">
+          <p class="lines-style position-relative text-center">其他登入方式</p>
+          <a href="#"
+             class="btn btn-outline-white w-100 text-center py-2 mb-md-4 mb-3"
+             data-bs-dismiss="modal">
+            <img src="./assets/images/icon_fb.svg" alt="Facebook" class="logIn-img">
+            </img>
+            Facebook 登入
+          </a>
+          <a href="#"
+             class="btn btn-outline-white w-100 text-center py-2" 
+             data-bs-dismiss="modal">
+            <img src="./assets/images/icon_google.svg" alt="Google" class="logIn-img">
+            </img>
+            Google 登入
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
