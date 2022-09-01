@@ -1,0 +1,64 @@
+---
+title: Coding Home
+layout: ./app/layout.ejs
+engine: ejs
+current: pay
+---
+
+<section class="pt-4 pb-3 timeline-content">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-9 col-lg-7 timeline step-2-active"></div>
+        </div>
+        <div class="row">
+          <div class="col-3 col-lg-5">
+            <div class="timeline-pointer text-center step-1 active">
+              <p>課程報名</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="timeline-pointer text-center step-2 active">
+              <p>信用卡付款</p>
+            </div>
+          </div>
+          <div class="col-3 col-lg-5">
+            <div class="timeline-pointer text-center step-3">
+              <p>付款成功</p>
+            </div> 
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-3 mt-lg-7 mb-6">
+    <div class="d-flex">
+        <div class="bg-dark p-4 px-lg-5 py-lg-7 col-lg-4 offset-lg-4 col">
+            <h3 class="fs-4 fw-bold text-center mb-4 mb-lg-7">信用卡付款</h3>
+            <p class="fs-7 fw-bold text-center mb-lg-4">請輸入信用卡資訊進行付款</p>
+            <form>
+                <div class="row mb-3 mb-lg-4">
+                    <div class="col">
+                        <label for="credit" class="form-label text-light">信用卡帳號</label>
+                        <input type="tel" class="form-control" placeholder="Xxxx-xxxx-xxxx-xxxx" id="credit" aria-label="credit">
+                    </div>
+                </div>
+                <div class="row mb-3 mb-lg-4">
+                    <div class="col">
+                        <label for="security-code" class="form-label text-light">安全碼</label>
+                        <input type="password" class="form-control" placeholder="***" id="security-code" aria-label="password">
+                    </div>
+                </div>
+                <div class="row mb-3 mb-lg-4">
+                    <div class="col">
+                        <label for="effective-date" class="form-label text-light">有效日期</label>
+                        <input type="text" class="form-control" id="effective-date" placeholder="(MM-YY)">
+                    </div>
+                </div>
+                <div class="d-lg-flex justify-content-between align-items-center">
+                    <span class="d-block mb-4 mb-lg-0 font-monospace fs-5">NT$1600</span>
+                    <a type="submit" href="pay-finished.html" class="d-block fs-7 btn btn-gradient px-3 py-2 px-lg-7 border-0 br8">下一步</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,7 +1,21 @@
-// 全站樣式
-body {
+
+// 內容不足一頁->footer緊貼底部
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex; /* 設置flex */
+    flex-direction: column; /* 方向為垂直方向 */
     font-family: "Noto Sans TC", "sans-serif";
 }
+
+.container{
+    flex: 1; /* 內容佔滿所有剩餘空間 */
+}
+// end
+
 
 img {
     object-fit: cover; // 防止圖片變形
